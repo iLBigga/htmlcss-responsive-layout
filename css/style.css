@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'PT Sans', sans-serif;
 }
 
 ol , ul, menu {
@@ -13,13 +14,26 @@ a {
     color: currentColor;
 }
 
+.img {
+    width: 100%;
+    display: block;
+}
+
+
+
 /* REGOLE FLEX */
+
+
 
 .row {
     display: flex;
 }
 
+
+
 /* REGOLE CONTAINER */
+
+
 
 .container {
     max-width: 1180px;
@@ -27,21 +41,37 @@ a {
     margin: 0 auto;
 }
 
+
+
 /* REGOLE BUTTON */
+
+
 
 .button {
     border-radius: 15px;
+    padding: 0 17px;
+    line-height: 38px;
 }
 
 .button-white {
-    background-color: white;
-    line-height: 38px;
+    background-color: white; 
     color: black;
     display: block;
-    padding: 0 17px;
 }
 
+.button-blue {
+    padding: 10px 50px;
+    text-align: center;
+    background-color: #0084FD;
+    color: white;
+    font-weight: bold;
+}
+
+
+
 /* REGOLE HEADER */
+
+
 
 .main-header {
     background-color: #0084FD;
@@ -61,4 +91,98 @@ a {
 
 .main-header .row img {
     height: 45px;
+}
+
+
+
+/* PRIMA SEZIONE : FEAURE */
+
+
+
+.main-feature-card {
+    flex-wrap: wrap;
+    margin: 0 -1.5rem;
+    gap: 26px 0px;
+}
+
+.col-feature-large {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.col-feature {
+    flex-basis: calc(100% / 3);
+}
+
+.col-feature.grow{
+    flex-grow: 1;
+}
+
+.feature-card-left {
+    flex-direction: column;
+}
+
+.feature-card.column {
+    text-align: center;
+    align-content: center;
+}
+
+/* Prima sezione stili */
+
+.feature {
+    padding-top: 46px;
+    padding-bottom: 100px;
+}
+
+.col-feature-large, .col-feature {
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.feature-card {
+    background-color: #B5DDFF;
+    padding: 2rem 1rem;
+    border-radius: 15px;
+}
+
+.feature-card-phone {
+    height: 256px;
+    padding: 0 4rem;
+    position: relative;
+    top: 36px
+}
+
+.feature-card-text {
+    margin: 41px 0;
+}
+
+.feature-card-title {
+    color: #0084FD;
+}
+
+.feature p {
+    color: grey;
+    font-weight: 700;
+}
+
+.feature-card.column i {
+    margin-bottom: 1.5rem;
+} 
+
+.feature-card.column h3 {
+    margin-bottom: 2rem ;
+}
+
+.feature-card.column i{
+    font-size: 80px;
+    color: #0084FD;
+}
+
+
+
+/* SECONDA SEZIONE : STRATEGIC PLANNING */
+
+
+
+.strategic-planning {
+    background-color: #9792E4;
 }
