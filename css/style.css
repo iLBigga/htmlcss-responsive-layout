@@ -14,7 +14,7 @@ a {
     color: currentColor;
 }
 
-.img {
+img {
     width: 100%;
     display: block;
 }
@@ -30,13 +30,22 @@ a {
 }
 
 
-
+.col-6 {
+    flex-basis: 0;
+    flex-grow: 1;
+}
 /* REGOLE CONTAINER */
 
 
 
 .container {
     max-width: 1180px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.container-small {
+    max-width: 910px;
     padding: 0 1rem;
     margin: 0 auto;
 }
@@ -67,6 +76,15 @@ a {
     font-weight: bold;
 }
 
+.circle-button {
+    background-color: #9792E4;
+    display:inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
 
 
 /* REGOLE HEADER */
@@ -91,6 +109,7 @@ a {
 
 .main-header .row img {
     height: 45px;
+    width: 81px;
 }
 
 
@@ -106,7 +125,7 @@ a {
 }
 
 .col-feature-large {
-    flex-basis: 0;
+    flex-basis: calc(100% / 2);
     flex-grow: 1;
 }
 
@@ -118,8 +137,12 @@ a {
     flex-grow: 1;
 }
 
+.feature-card-right {
+    
+}
+
 .feature-card-left {
-    flex-direction: column;
+
 }
 
 .feature-card.column {
@@ -145,10 +168,8 @@ a {
 }
 
 .feature-card-phone {
-    height: 256px;
-    padding: 0 4rem;
-    position: relative;
-    top: 36px
+    /* position: relative; */
+    top: 32px
 }
 
 .feature-card-text {
@@ -183,6 +204,81 @@ a {
 
 
 
-.strategic-planning {
+.planning {
     background-color: #9792E4;
+    padding-top: 125px;
+    padding-bottom: 65px;
 }
+
+.planning-main-card {
+    gap: 66px;
+}
+
+.col-6.right.row{
+    flex-direction: column;
+}
+
+.planning .card-left.left-img {
+    width: 410px;
+}
+
+.planning-left-text {
+    margin-top: 135px;
+    color: white;
+}
+
+.planning-left-text h2 {    
+    margin-bottom: 63px;
+    font-size: 2rem;
+}
+
+.planning-right-text {
+    margin-top: 1.25rem;
+}
+
+.planning-right-text h2 {
+    margin-bottom: 2rem;
+
+}
+
+.planning-right-text p {
+    margin-bottom: 37px;
+    font-style: italic;
+}
+
+.planning-card-right {
+    background-color: white;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+.planning-right-text {
+    text-align: center;
+}
+
+.planning-right-text a span{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.card-right.right-img {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.col-6.left {
+    align-self: flex-end;
+}
+
+
+
+/* TERZA SEZIONE : TESTIMONIALS */
+
+
+
+.testimonials {
+    padding-top: 66px;
+}
+
+
