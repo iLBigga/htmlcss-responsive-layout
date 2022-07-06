@@ -557,12 +557,22 @@ img {
 
 @media (max-width:810px) {
 
-    html,body {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
+    body {       
         overflow-x: hidden; 
+    }
+
+    .header-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu::after {
+        content: ' \2261';
+    }
+
+    .nav-menu {
+        align-items: center;
+        font-size: 40px;
     }
 
     .header-list {
@@ -589,20 +599,26 @@ img {
 
 @media (max-width:375px) {
 
-    html,body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    body {    
+        overflow-x: hidden; 
     }
 
     .header-list {
         display: none;
     }
 
-    .nav-menu {
-        content: "\f0c9";
+    .header-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu::after {
+        content: ' \2261';
+    }
+
+    .nav-menu{
+        align-items: center;
+        font-size: 40px;
     }
 
     .planning-main-card {
